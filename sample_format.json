@@ -1,0 +1,26 @@
+{
+    "line_items": [
+        {
+            "sort1": "General Requirements",
+            "sort2": "General Trade Requirements",
+            "description": "Item 1",
+            "quantity": 1,
+            "uom": "each",
+            "labor": 50,
+            "material": 100,
+            "unit_cost": 150,
+            "total": 150
+        },
+        {
+            "sort1": "General Requirements",
+            "sort2": "General Trade Requirements",
+            "description": "Item 2",
+            "quantity": 1,
+            "uom": "each",
+            "labor": 50,
+            "material": 100,
+            "unit_cost": 150,
+            "total": 150
+        }
+    ]
+}
