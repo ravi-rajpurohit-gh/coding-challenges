@@ -1,0 +1,38 @@
+The columns are:
+1. row starts with "start"
+-start
+-number of points in time (length of track)
+-genesis year
+-genesis month
+-genesis day
+-genesis hour
+
+2. row starts without "start"
+
+-x grid point of the centre
+-y grid point of the centre
+-longitude
+-latitude
+-minimum stream function
+-minimum sea level pressure
+-Pressure drop (Pa) (other wise magnitude of closed contours of MSLP in Pa)
+-Maximum Surface Wind (m/s) within 3 degrees
+-Averaged relative humidity (in %) within 3 degrees at 850hPa
+-Maximum surface geopotential within 2 degrees, which gives the surface elevation
+-land sea ratio of the grid at the centre (1 for land 0 for sea);>0.5 consider as genesis over land 
+-ACEPSL
+-ACE
+-PDI
+-IKE
+-year
+-month
+-day
+-hour
+
+
+
+Note:
+ACEPSL = 1e-4 * (1.94384 kt/(m/s) * (3.92 * (1016 - PSL)^0.644))^2 if PSL < 1016.  Here PSL is the minimum surface pressure at the point of detection in hPa.  This formula leverages the TC wind-pressure relationship defined in Holland (2008) to provide a proxy for ACE.
+ACE = 1e-4 * (1.94384 kt/(m/s) * Umax)^2, where Umax is the maximum instantaneous windspeed magnitude within the three degree radius (in m/s).
+PDI = Umax^3, where Umax is the maximum instantaneous windspeed magnitude within the three degree radius (in m/s)
+IKE = sum_i 0.5 * U_i^2 * area_i, where the sum is taken over all grid boxes within the given radius, U_i is the wind magnitude in that grid cell, and area_i is the area of the grid cell (in m^2).
