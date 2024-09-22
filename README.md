@@ -4,7 +4,7 @@ This project analyzes and visualizes the geographical movement of monsoon depres
 
 ## Interactive Plot
 
-You can explore the interactive visualization of the monsoon depression events by clicking [**here**](plot_interactive.html). This interactive plot allows for dynamic exploration of the depression paths over time, providing insights into their geographical shifts.
+You can explore the interactive visualization of the monsoon depression events by running the plot_interactive.html file. This interactive plot allows for dynamic exploration of the depression paths over time, providing insights into their geographical shifts.
 
 ## Conclusion
 
