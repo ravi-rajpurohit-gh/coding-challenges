@@ -4,9 +4,9 @@ This repository contains different coding challenges. Please check out the indiv
 
 ## Branches
 
-- [ediphiTask:  Data Processing Challenge for Ediphi](https://github.com/ravirajpurohit414/coding-challenges/tree/ediphiTask)
-- [missionWiredTask: GeoShift Analysis of Monsoon Depression](https://github.com/ravirajpurohit414/coding-challenges/tree/monsoon-analysis)
-- [monsoon-analysis: Data Transformation Challenge for MissionWired](https://github.com/ravirajpurohit414/coding-challenges/tree/missionWiredTask)
+- [ediphiTask](https://github.com/ravirajpurohit414/coding-challenges/tree/ediphiTask):  Data Processing Challenge for Ediphi
+- [missionWiredTask](https://github.com/ravirajpurohit414/coding-challenges/tree/missionWiredTask): Data Transformation Challenge for MissionWired
+- [monsoon-analysis](https://github.com/ravirajpurohit414/coding-challenges/tree/monsoon-analysis): GeoShift Analysis of Monsoon Depression
 
 Make sure to switch to the respective branches to view the details of each challenge.
 
