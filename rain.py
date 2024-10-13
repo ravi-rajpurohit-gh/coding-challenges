@@ -12,7 +12,7 @@ def map(x, x1, x2, y1, y2):
     return y1 + x * (y2 - y1) / (x2 - x1)
 
 def thunderon(time):
-    Window.clearcolor = (1,1,1)
+    Window.clearcolor = (0.7,0,0.9)
     pass
 
 def thunderoff(time):
@@ -27,7 +27,7 @@ class PurpleRain(BoxLayout):
     def __init__(self):
         super(PurpleRain, self).__init__()
         Window.size = (640, 360)
-        Window.clearcolor = (0.20, 0.20, 0.20)
+        Window.clearcolor = (0.10, 0.10, 0.10)
 
         # create the drops
         self.drops = [Drop(*Window.size) for i in range(100)]
@@ -35,7 +35,7 @@ class PurpleRain(BoxLayout):
         # start the clock
         self.thunder_counter = 0
         Clock.schedule_interval(self.update_drops, 0.05)
-        Clock.schedule_interval(thunderon, 10)
+        Clock.schedule_interval(thunderon, 7)
         Clock.schedule_interval(thunderoff, 0.2)
 
     '''
@@ -44,7 +44,7 @@ class PurpleRain(BoxLayout):
     def update_drops(self, time):
         self.canvas.before.clear()
         with self.canvas.before:
-            Color(0.9, 0.9, 0.9)
+            Color(0.9,0.9,0.9)
             for drop in self.drops:
                 drop.fall()
                 drop.show()
